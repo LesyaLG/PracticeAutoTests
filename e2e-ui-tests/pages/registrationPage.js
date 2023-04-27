@@ -20,7 +20,7 @@ exports.RegistrationPage = class RegistrationPage extends BasePage {
         await this.registerButton.click();
     }
 
-    async openSignIpPage() {
+    async openSignInPage() {
         await this.signInLink.click();
     }
 

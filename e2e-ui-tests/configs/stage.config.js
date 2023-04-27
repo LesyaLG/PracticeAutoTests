@@ -6,6 +6,7 @@ config.use = {
     env: 'stage',
     baseUrl: 'http://omega-stage.qa.nolimit.school',
     loginUrl: 'http://omega-stage.qa.nolimit.school/sign-in',
+    registerUrl: 'http://omega-stage.qa.nolimit.school/sign-up',
     apiUrl: 'http://omega-stage.qa.nolimit.school/back-office/api',
 };
 
