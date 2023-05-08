@@ -20,7 +20,7 @@ test.describe('Registration tests', () => {
  
     test('Register with valid data', async ({ page }) => {
        // await registrationPage.register('LG','lesya558@gmail.com', 't_1234');
-        await registrationPage.register(userData.generatedFullName, userData.generatedEmail, userData.password);
+       await registrationPage.register(userData.generatedFullName, userData.generatedEmail, userData.password);
        
         //await registrationPage.register('LG',chance.email({domain: 'gmail.com'}), 't_1234');
         
