@@ -1,6 +1,4 @@
 const { test, expect, request } = require('@playwright/test');
-//const { LoginPage } = require('../pages/loginPage');
-//const { EditProfilePage } = require('../pages/editProfilePage');
 const { RegistrationPage } = require('../pages/registrationPage');
 const { users } = require('../../test-data/users');
 const { userData } = require('../../test-data/data');
@@ -19,12 +17,7 @@ test.describe('Registration tests', () => {
 
  
     test('Register with valid data', async ({ page }) => {
-       // await registrationPage.register('LG','lesya558@gmail.com', 't_1234');
        await registrationPage.register(userData.generatedFullName, userData.generatedEmail, userData.password);
-       
-        //await registrationPage.register('LG',chance.email({domain: 'gmail.com'}), 't_1234');
-        
-        //await expect(page.locator("[class='logo']")).toBeVisible;
        await expect(page).toHaveURL('http://omega-stage.qa.nolimit.school/sign-in');
     });
     

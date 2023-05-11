@@ -1,5 +1,3 @@
-// registrationPage
-
 const { BasePage } = require("./basePage");
 exports.RegistrationPage = class RegistrationPage extends BasePage {
 
